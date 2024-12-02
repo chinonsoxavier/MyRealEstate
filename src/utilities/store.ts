@@ -11,6 +11,6 @@ export const useMainStore = defineStore('main', {
     toggleMenu() {
       this.menuOpen = !this menuOpen;
     },
-  }
+  };
 });
 
