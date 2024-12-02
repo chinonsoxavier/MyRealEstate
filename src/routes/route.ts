@@ -11,6 +11,16 @@ const routes = [
     component: () => import("../views/404.vue"),
   },
   {
+    path: "/auth/login",
+    name: "login",
+    component: () => import("../views/app/auth/login/LoginMainView.vue"),
+  },
+  {
+    path: "/auth/register",
+    name: "register",
+    component: () => import("../views/app/auth/register/RegisterMainView.vue"),
+  },
+  {
     path: "/",
     name: "home",
     component: HomeMainView,

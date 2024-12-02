@@ -8,12 +8,12 @@ import IconComponent from "../../../../components/ReComponents/IconComponent.vue
 </script>
 
 <template>
-  <div class="flex items-stretch justify-between flex-wrap tablet:justify-center tablet:gap-8  w-full py-28">
-    <div class="flex flex-col items-start tablet:items-center tablet:text-center justify-between gap-4 flex-1">
+  <div class="flex items-stretch justify-between flex-wrap base:justify-center base:flex-col base:gap-8  w-full base:py-10 py-28">
+    <div class="flex flex-col items-start base:items-start base:text-left justify-between gap-4 flex-1">
       <p class="text-3xl xs:text-4xl md:text-5xl  text-darkText font-medium">
         Luxury Apartments on California.
       </p>
-      <div class="flex items-center justify-start gap-2">
+      <div class="flex items-center flex-wrap justify-start gap-2">
         <button
           class="px-4 whitespace-nowrap py-1 bg-black text-sm text-white cursor-pointer rounded-full"
         >
@@ -26,9 +26,9 @@ import IconComponent from "../../../../components/ReComponents/IconComponent.vue
       </div>
     </div>
     <div
-      class="flex items-end justify-between text-left tablet:items-center flex-1 flex-col gap-6 tablet:justify-center "
+      class="flex items-end justify-between tablet:gap-1 text-left base:items-start flex-1 flex-col gap-6 tablet:justify-center "
     >
-      <p class="text-3xl xs:text-4xl md:text-5xl  whitespace-nowrap text-darkText font-medium text-left tablet:text-center">
+      <p class="text-3xl lg:text-5xl  whitespace-nowrap text-darkText font-medium text-left tablet:text-center">
         Price: $1,670.00
       </p>
       <p class="text-lg font-normal text-lightText">
@@ -41,17 +41,17 @@ import IconComponent from "../../../../components/ReComponents/IconComponent.vue
          </div>
          <div class="flex gap-3 items-center w-full justify-start">
             <IconComponent
-              class="border w-12 h-12 duration-500 hover:bg-black hover:fill-white border-darkText"
+              class="border w-12 h-12 tablet:w-10 tablet:h-10 duration-500 hover:bg-black hover:fill-white border-darkText"
             >
               <HeartIcon class="w-7 h-7 tablet:h-6 tablet:w-6" />
             </IconComponent>
             <IconComponent
-              class="border w-12 h-12 duration-500 hover:bg-black hover:fill-white border-darkText"
+              class="border w-12 h-12 tablet:w-10 tablet:h-10 duration-500 hover:bg-black hover:fill-white border-darkText"
             >
               <BookmarkIcon class="w-7 h-7 tablet:h-6 tablet:w-6" />
             </IconComponent>
             <IconComponent
-              class="border w-12 h-12 duration-500 hover:bg-black hover:fill-white border-darkText"
+              class="border w-12 h-12 tablet:w-10 tablet:h-10 duration-500 hover:bg-black hover:fill-white border-darkText"
             >
               <PlusCircleIcon class="w-6 h-6 tablet:h-5 tablet:w-5" />
             </IconComponent>

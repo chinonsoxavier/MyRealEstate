@@ -9,7 +9,7 @@ const productCardContainer = ref(null);
 const productCardWrapper = ref(null);
 const productCardWidth = ref(0);
 const productPerSlide = 4;
-const gapPerSlide = ref(24);
+// const gapPerSlide = ref(24);
 const translateX = ref(0);
 
 onMounted(() => {
@@ -42,12 +42,12 @@ onMounted(() => {
     </div>
     <div class="max-width relative flex items-center justify-center">
       <div class="b absolute w-fll h-10 max-width" >
-        <div v-on:click="prev()" class="" >
+        <div v-on:click="prev()" class="hidden" >
           <IconComponent  class="absolute left-14 z-10 bg-white shadow duration-500 hover:shadow-md fill-black hover:bg-adminPrimary hover:fill-white">
             <CaretIcon class=" w-6 h-6 rotate-90" />
           </IconComponent>
         </div>
-        <div v-on:click="next()" >
+        <div v-on:click="next()" class="hidden" >
           <IconComponent  class="absolute right-20 z-10 shadow duration-500 hover:shadow-md fill-black hover:bg-adminPrimary hover:fill-white bg-white">
             <CaretIcon class=" w-6 h-6 -rotate-90" />
           </IconComponent>
@@ -55,17 +55,16 @@ onMounted(() => {
       </div>
       <div
         ref="productCardWrapper"
-        class="mt-4 relative flex items-center duration-500 justify-start overflow-x-clip w-full"
+        class="mt-4 relative flex items-center duration-500 justify-start overflow-xclip w-full"
         >
         <div
         ref="productCardContainer"
         :style="{transform:`translateX(${translateX}px)`}"
-          class="flex items-center overflw-scroll bg-[ble] justify-center gap-6 duration-500"
+          class="flex items-start overflow-scroll bg-[ble] justify-start gap-6 duration-500"
         >
           
           <div
-            class=" h-full bg-[pik] "
-            :style="{ width: productCardWidth - gapPerSlide + 'px' }"
+            class=" h-full flex-1 min-w-[230px] bg-[pik] "
             v-for="slide in slides"
             :key="slide"
           >

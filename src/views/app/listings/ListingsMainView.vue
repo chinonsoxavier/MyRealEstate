@@ -4,7 +4,6 @@ import CheckIcon from "../../../components/icons/regular/CheckIcon.vue";
 import PlusCircleIcon from "../../../components/icons/regular/PlusCircleIcon.vue";
 import NavbarComponent from "../../../components/layout/NavbarComponent.vue";
 import IconComponent from "../../../components/ReComponents/IconComponent.vue";
-import HomeAdvertComponent from "../home/components/HomeAdvertComponent.vue";
 import ListingOverviewComponent from "./components/ListingOverviewComponent.vue";
 import ListingsContactFormComponent from "./components/ListingsContactFormComponent.vue";
 import ListingsDetailComponent from "./components/ListingsDetailComponent.vue";
@@ -25,7 +24,6 @@ const setaccordion = (params) => {
 <template>
   <section class="bg-[#fff8f4]">
     <div class="flex flex-col items-center justify-center w-full">
-      <HomeAdvertComponent />
       <NavbarComponent />
     </div>
     <div class="flex items-center justify-center">
@@ -35,7 +33,7 @@ const setaccordion = (params) => {
         <ListingOverviewComponent />
         <div class="flex items-start flex-wrap-reverse justify-between gap-5">
           <div class="flex-1 gap-5 flex  flex-col">
-            <div class="p-10 rounded-xl bg-white shadow-md flex-1">
+            <div class="p-10 rounded-xl bg-white shadow-md flex-1 tablet:p-5">
               <p class="text-3xl base:text-xl font-medium text-black text-left">Overview</p>
               <p class="text-lg mobile:text-sm text-lightText font-normal mt-5">
                 Lorem ipsum dolor sit amet consectetur. Et velit varius ipsum
@@ -44,7 +42,7 @@ const setaccordion = (params) => {
                 integer neque nec.
               </p>
             </div>
-            <div class="p-10 rounded-xl bg-white shadow-md flex-1">
+            <div class="p-10 rounded-xl bg-white shadow-md flex-1 tablet:p-5">
               <div class="pb-5">
                 <p class="text-3xl base:text-xl font-medium text-black text-left">
                   Property Features
@@ -277,7 +275,7 @@ const setaccordion = (params) => {
                 </Transition>
               </div>
             </div>
-            <div class="p-10 rounded-xl bg-white shadow-md flex-1">
+            <div class="p-10 rounded-xl bg-white shadow-md flex-1 tablet:p-5">
               <p class="text-3xl base:text-xl font-medium text-black text-left">Amenities</p>
               <p class="text-[17px] my-6 mobile:text-sm text-lightText font-normal mt-5">
                 Risk management & compliance, when approached strategically,
@@ -356,7 +354,7 @@ const setaccordion = (params) => {
                 </div>
               </div>
             </div>
-            <div class="p-10 rounded-xl bg-white shadow-md flex-1">
+            <div class="p-10 rounded-xl bg-white shadow-md flex-1 tablet:p-5">
               <div class="flex items-center justify-between">
                 <p class="text-3xl base:text-xl font-medium text-black text-left">Reviews</p>
               </div>
@@ -372,7 +370,7 @@ const setaccordion = (params) => {
                 </button>
               </div>
             </div>
-            <div class="p-10 rounded-xl bg-white shadow-md flex-1 text-left">
+            <div class="p-10 rounded-xl bg-white shadow-md flex-1 tablet:p-5 text-left">
                  <p class="text-3xl base:text-xl font-medium text-black text-left">Leave A Review</p>
               <p class="text-lg text-lightText font-normal mt-5 base:text-base">
                  <router-link to="/auth/sign-in" class="underline" >Sign in</router-link>   in to post your comment or signup if you don't have any account.
@@ -390,7 +388,7 @@ const setaccordion = (params) => {
         </div>
         </div> 
         <div class="flex flex-wrap gap-6 w-full" >
-        <div class="p bg-red] w-full flex-1">
+        <div class="p min-w-[200px] w-full flex-1">
         <label htmlFor="nameLabel" for="Your Full Name">Your Email</label>
         <div class="border rounded-xl w-full mt-1">
           <input
@@ -401,7 +399,7 @@ const setaccordion = (params) => {
           />
         </div>
         </div> 
-        <div class="p bg-red] w-full flex-1">
+        <div class="p min-w-[200px] w-full flex-1">
              <label htmlFor="nameLabel" for="Your Full Name">Your Rating</label>
             <select name="reviewMessageLabel" id="" class="w-full mt-1 bg-transparent border rounded-xl py-4 px-4" >
                 <option value="One Star">One Star</option>
@@ -422,7 +420,7 @@ const setaccordion = (params) => {
     </div>
 </div>
 </div>
-<div class="bg-black base:px-3 text-white py-3 text-center w-min whitespace-nowrap px-5 rounded-md" >Post Review</div>
+<button class="bg-black base:px-3 text-white py-3 text-center w-min whitespace-nowrap px-5 rounded-md" >Post Review</button>
             </div>
           </div>
           <ListingsContactFormComponent />

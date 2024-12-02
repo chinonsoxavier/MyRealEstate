@@ -11,8 +11,8 @@ import ImageComponent from '../../../../components/ReComponents/ImageComponent.v
         <ImageComponent alt="profile pic" :src="image1" rounded class="max-w-14" />
 
         <div class="flex flex-col items-start gap-5 justify-between w-full " >
-            <div class="w-full" >
-            <div class="flex items-center justify-between w-full" >
+            <div class="w-full " >
+            <div class="flex items-center flex-wrap tablet:flex-col tablet:items-start tablet:gap-3 justify-between w-full" >
                 <p>Chinonso Xavier</p>
                 <div class="" >
                     <span class="whitespace-nowrap" >(4.7 Rating)</span>
@@ -25,7 +25,7 @@ import ImageComponent from '../../../../components/ReComponents/ImageComponent.v
                     </span>
                 </div>
             </div>
-            <p class="text-lightText font-normal " >
+            <p class="text-lightText font-normal tablet:mt-3" >
                 1 Dec, 2024
             </p>
         </div>

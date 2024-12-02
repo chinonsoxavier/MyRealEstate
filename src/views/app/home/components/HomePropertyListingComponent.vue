@@ -9,6 +9,7 @@ import ImageComponent from "../../../../components/ReComponents/ImageComponent.v
 </script>
 
 <template>
+  <RouterLink to="listings/hbdhbchdchjds">
   <div class="flex-1 basis-[300px] p-4 rounded-xl bg-white w-full duration-500 hover:shadow-lg">
     <ImageComponent
       alt="product image"
@@ -48,4 +49,5 @@ import ImageComponent from "../../../../components/ReComponents/ImageComponent.v
          </IconComponent>
     </div>
   </div>
+  </RouterLink>
 </template>

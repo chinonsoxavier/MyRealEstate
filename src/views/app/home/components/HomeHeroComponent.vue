@@ -1,8 +1,8 @@
 <script setup lang="ts" ></script>
 
 <template>
-    <div>
-         <div class="text-center max-w-[620px] w-full" >
+    <div >
+         <div class="text-center max-w-[620px] mobile:[400px] w-full" >
             <p class="text-3xl xs:text-4xl md:text-5xl lg:text-6xl  font-medium" >Get the ideal home for your family</p>
         </div>
         <div class="text-center mt-12" >

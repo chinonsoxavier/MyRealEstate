@@ -6,7 +6,7 @@ import HomeAdvantagesCardComponent from "./HomeAdvantagesCardComponent.vue";
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center">
+  <div class=" relative z-20 flex flex-col items-center justify-center">
     <div class="max-width text-center">
       <p class="text-4xl font-medium text-darkText">We’r here to help
 you get your dream home</p>

@@ -81,7 +81,7 @@ const heroData = [
       <NavbarComponent />
     </div>
     <div class="flx flex-col items-center justify-center">
-      <div class="flex flex-col items-center justify-center py-28 base: tablet:py-28">
+      <div class="flex flex-col items-center justify-center max-width py-28 tablet:py-8 base: ">
         <HomeHeroComponent />
       </div>
       <div class="flex items-center justify-center">
@@ -111,10 +111,10 @@ const heroData = [
           alt="profile pic"
           :src="data.image"
           rounded
-          class="max-w-14"
+          class="max-w-14 min-w-11"
         />
-        <p class="text-darkText font-medium base:text-sm text-base">{{ data.name }}</p>
-        <p class="text-lightText font-normal text-sm base:text-xs">{{ data.location }}</p>
+        <p class="text-darkText font-medium text-base">{{ data.name }}</p>
+        <p class="text-lightText font-normal text-sm ">{{ data.location }}</p>
       </div>
       <div class="text-center">
         <p class="text-lg lg:text-xl font-normal text-darkText max-w-[620px]">
@@ -168,9 +168,10 @@ const heroData = [
       background: `url(${dealsImage})`,
       backgroundAttachment: 'fixed',
       backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
+  backgroundSize: 'cover',
+      backgroundPosition:'center'
     }"
-    class="home-deals py-28 flex items-center justify-center relative before:absolute"
+    class="home-deals tablet:bg-centr py-28 flex items-center justify-center relative before:absolute"
   >
     <div class="max-width relative z-40">
       <HomeDealsComponent />
@@ -265,18 +266,20 @@ const heroData = [
 
 .home-new-home::before {
   background: url("../../../assets/shape_07.svg");
-  width: 100%;
+  width: 50%;
   height: 100%;
-  z-index: 10;
+  opacity: .6;
+  z-index: 0;
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .home-new-home::after {
   background: url("../../../assets/shape_08.svg");
-  width: 100%;
+  width: 50%;
+  opacity: .6;
   height: 100%;
-  z-index: 10;
+  z-index: 0;
   right: 0;
   background-position: right;
   background-size: contain;
