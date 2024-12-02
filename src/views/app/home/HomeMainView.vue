@@ -72,7 +72,7 @@ const heroData = [
 
 <template>
   <Section class="relative h-screen tablet:h-max bg-[#fff8f4]">
-    <img src="/src/assets/herobg.svg" class="absolute object-cover h-screen" />
+    <img src="/src/assets/herobg.svg" class="absolute object-cover h-full" />
     <!-- <div class="absolute h-full bg-[red bottom-0 inset-0" >
             <HeroBg/>
         </div> -->
