@@ -36,7 +36,7 @@ const prevSlide = () => {
     class="h-[80vh] base:flex-col gap-4 flex items-stretch justify-center"
   >
     <div
-      class="h-full w-full bg-[red] base:h-[vh] flex items-start rounded-xl justify-center relative flex-1"
+      class="h-full w-full base:h-[vh] flex items-start rounded-xl justify-center relative flex-1"
     >
       <div
         class="flex items-center min--[570px] justify-between w-full px-10 absolute mt-8 z-10 top-2"
@@ -61,13 +61,13 @@ const prevSlide = () => {
           See all 37 Photos
         </button>
       </div>
-      <!-- <div class="w-full h-full bg-[pink] rounded-xl" >hj -->
+      <!-- <div class="w-full h-full rounded-xl" >hj -->
       <ImageComponent
       v-for="(img, index) in slides" :key="index" 
         alt="property listing"
         :class="[index==currentActiveSlide ? 'block' : 'hidden']"
         :src="img"
-        class="duration-500 rounded-xl inset0 abslute object-cover bg-[green] w-full h-full"
+        class="duration-500 rounded-xl inset0 abslute object-cover w-full h-full"
       />
       <!-- </div> -->
     </div>
