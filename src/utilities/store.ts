@@ -1,9 +1,16 @@
-import { reactive } from "vue";
 
-export const store = reactive({
-    menuOpen: false,
-    
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
-  },
+// store.js
+import { defineStore } from 'pinia';
+
+export const useMainStore = defineStore('main', {
+  state: () => ({
+   menuOpen: false,
+    user: null
+  }),
+  actions: {
+    toggleMenu() {
+      this.menuOpen = !this menuOpen;
+    },
+  }
 });
+
