@@ -94,10 +94,10 @@ const heroData = [
     </div>
   </Section>
   <section
-    class="border-y mb-10 border-b-2 border-b-darkText relative tablet:py-10 py-16 flex items-center justify-center"
+    class="border-y mb-10 border-b-2 border-b-darkText relative py-16 flex items-center justify-center"
   >
     <div
-      class="flex items-center tablet:flex-col tablet:gap-5 justify-between max-width duration-1000"
+      class="flex  items-center tablet:flex-col tablet:gap-5 justify-between max-width duration-1000"
       v-for="(data, index) in heroData"
       :key="data.name"
       :class="[

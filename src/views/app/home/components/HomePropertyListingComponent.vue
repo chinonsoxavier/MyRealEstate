@@ -1,11 +1,23 @@
 <script setup lang="ts">
-import { propertyImage1 } from "../../../../assets/exports";
+// import { propertyImage1 } from "../../../../assets/exports";
 import ArrowSquareUpLeftDuoIcon from "../../../../components/icons/duo/ArrowSquareUpLeftDuoIcon.vue";
 import BathTubDuoIcon from "../../../../components/icons/duo/BathTubDuoIcon.vue";
 import BedDuoIcon from "../../../../components/icons/duo/BedDuoIcon.vue";
 import ArrowUpRightIcon from "../../../../components/icons/regular/ArrowUpRightIcon.vue";
 import IconComponent from "../../../../components/ReComponents/IconComponent.vue";
 import ImageComponent from "../../../../components/ReComponents/ImageComponent.vue";
+
+defineProps({
+  image: {},
+  text: {
+    type: String,
+  },
+  label: {
+    type:String
+  }
+
+})
+
 </script>
 
 <template>
@@ -13,17 +25,17 @@ import ImageComponent from "../../../../components/ReComponents/ImageComponent.v
   <div class="flex-1 basis-[300px] p-4 rounded-xl bg-white w-full duration-500 hover:shadow-lg">
     <ImageComponent
       alt="product image"
-      :src="propertyImage1"
+      :src="image"
       class="rounded-xl"
     />
 
     <p
       class="text-darkText mobile:text-lg font-medium duration-500 mt-4 hover:text-adminPrimary text-xl"
     >
-      Blueberry villa
+      {{text}}
     </p>
     <p class="text-lightText mobile:text-sm fi-light text-base font-normal my-1">
-      Mirpur 10, Stadium dhaka 1208
+     {{label}}
     </p>
 
     <div
