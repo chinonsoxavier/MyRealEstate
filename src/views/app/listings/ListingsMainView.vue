@@ -440,7 +440,7 @@ const setaccordion = (params) => {
       <HomeRetialerComponent />
     </div>
   </section>
-  <section class="">
+  <section class="hidden">
     <ListingsFooter />
   </section>
   </section>
