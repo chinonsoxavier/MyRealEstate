@@ -81,7 +81,7 @@ const heroData = [
       <NavbarComponent />
     </div>
     <div class="flx flex-col items-center justify-center">
-      <div class="flex flex-col items-center justify-center max-width py-28 tablet:py-8 base: ">
+      <div class="flex flex-col items-center justify-center max-width py-28 tablet:py-12 base: ">
         <HomeHeroComponent />
       </div>
       <div class="flex items-center justify-center">
