@@ -17,6 +17,6 @@ defineProps({
             <slot />
         </div>
         <p class="text-lightText text-lg font-normal" >{{ label }}</p>
-        <p class="text-xl text-center text-darkText font-normal" >{{ text }}</p>
+        <p class="text-xl tablet:font-normal tablet:text-lightText text-center text-darkText font-normal tablet:max-w-[520px]" >{{ text }}</p>
     </div>
 </template>

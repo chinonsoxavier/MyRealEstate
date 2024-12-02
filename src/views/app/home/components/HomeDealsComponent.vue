@@ -9,9 +9,9 @@ import ImageComponent from "../../../../components/ReComponents/ImageComponent.v
 </script>
 
 <template>
-  <div class="flex items-center justify-between gap-10">
-    <div class="flex flex-col items-start justify-between gap-6 flex-1">
-      <p class="text-6xl font-medium text-white">
+  <div class="flex items-center justify-between  tablet:items-center tablet:justify-center tablet:flex-col flex-wrap gap-10">
+    <div class="flex flex-col items-start tablet:items-center tablet:text-center justify-between gap-6 flex-1">
+      <p class="text-3xl  md:text-4xl lg:text-6xl  font-medium text-white">
         Exclusive Monthly Deal for you.
       </p>
       <p class="text-lg text-white font-medium">
@@ -22,18 +22,19 @@ import ImageComponent from "../../../../components/ReComponents/ImageComponent.v
       </button>
     </div>
 
-    <div class="bg-white rounded-xl shadow-md p-3 flex-1">
-      <div class="flex items-stretch justify-between h-[80%]">
+    <div class="bg-[white] rounded-xl shadow-md p-3 flex-1">
+      <div class="flex items-stretch tablet:justify-center tablet:items-center justify-between h-[80%] w-full tablet:flex-col">
+        <hr>
         <div
-          class="flex flex-1 basis-[120px] max-w-[200px] flex-col p-5 border-r justify-between"
+          class="flex flex-1 basis-[120px] max-w-[200px] flex-col p-5 border-r tablet:border-r-0 w-full tablet:max-w-full border-b justify-between"
         >
-          <div class="flex flex-col gap-5 items-start justify-start">
-            <button class="bg-adminPrimary text-white rounded-full px-3 py-1">
+          <div class="flex flex-col gap-5  items-start justify-start w-full">
+            <button class="bg-adminPrimary text-white mobile:py-[1px] rounded-full px-3 py-1">
               FOR SELL
             </button>
-            <p class="text-2xl font-medium">Luxury fisa orkit villa.</p>
+            <p class="text-2xl mobile:text-lg font-medium tablet:whitespace-nowrap">Luxury fisa orkit villa.</p>
           </div>
-          <div class="flex items-center gap-4 mb-3 justify-evenly">
+          <div class="flex items-center gap-4 mb-3 tablet:mt-4 tablet:justify-start justify-evenly">
             <IconComponent class="w-6-6">
               <HeartIcon class="w-7 h-7 fill-[#bfbfbf] duration-500 hover:fill-adminPrimary" />
             </IconComponent>
@@ -50,7 +51,7 @@ import ImageComponent from "../../../../components/ReComponents/ImageComponent.v
         >
           <div class="">
             <div class="text-left">
-              <p class="text-xl text-lightText">
+              <p class="text-xl tablet:text-base text-lightText">
                 Mirpur 10, National Stadium, 1210, Dhaka, BD
               </p>
             </div>
@@ -60,31 +61,31 @@ import ImageComponent from "../../../../components/ReComponents/ImageComponent.v
                 :src="dealsImage2"
                 class=""
               />
-              <p class="absolute text-4xl font-semibold text-black">
+              <p class="absolute text-4xl tablet:text-2xl font-semibold text-black">
                 $28,100.00
               </p>
             </div>
           </div>
-          <div class="flex items-center gap-5 justify-between">
-            <div class="border-r text-left px-5">
-              <p class="text-xl font-medium text-black">2137</p>
+          <div class="flex mobile:gap-0 items-center gap-5 justify-between">
+            <div class="border-r text-left px-5 mobile:px-2">
+              <p class="text-xl font-medium tablet:text-base text-black">2137</p>
               <p class="text-sm font-normal text-lightText">sqft</p>
             </div>
-            <div class="border-r text-center px-5">
-              <p class="text-xl font-medium text-black">03</p>
+            <div class="border-r text-center px-5 mobile:px-2">
+              <p class="text-xl font-medium tablet:text-base text-black">03</p>
               <p class="text-sm font-normal text-lightText">bed</p>
             </div>
             <div class="text-right px-5">
-              <p class="text-xl font-medium text-black">02</p>
+              <p class="text-xl font-medium tablet:text-base mobile:px-2 text-black">02</p>
               <p class="text-sm font-normal text-lightText">bath</p>
             </div>
           </div>
         </div>
       </div>
       <div class="h-[20%] flex items-center justify-between p-3 border-t">
-        <p class="text-[17px] hover:text-adminPrimary hover:underline duration-500 cursor-pointer">Check Full Details</p>
+        <p class="text-[17px] hover:text-adminPrimary hover:underline duration-500 cursor-pointe tablet:text-base">Check Full Details</p>
         <IconComponent
-          class="bg-black fill-white w-12 h-12 duration-500 hover:bg-adminPrimary"
+          class="bg-black fill-white w-12 h-12 tablet:h-10 tablet:w-10 duration-500 hover:bg-adminPrimary"
         >
           <ArrowUpRightIcon class="w-6 h-6" />
         </IconComponent>

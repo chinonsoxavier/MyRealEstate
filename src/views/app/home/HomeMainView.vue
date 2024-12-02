@@ -71,7 +71,7 @@ const heroData = [
 </script>
 
 <template>
-  <Section class="relative h-screen d]">
+  <Section class="relative h-screen tablet:h-max bg-[#fff8f4]">
     <img src="/src/assets/herobg.svg" class="absolute object-cover h-screen" />
     <!-- <div class="absolute h-full bg-[red bottom-0 inset-0" >
             <HeroBg/>
@@ -81,12 +81,12 @@ const heroData = [
       <NavbarComponent />
     </div>
     <div class="flx flex-col items-center justify-center">
-      <div class="flex flex-col items-center justify-center py-28">
+      <div class="flex flex-col items-center justify-center py-28 base: tablet:py-28">
         <HomeHeroComponent />
       </div>
-      <div class="flex items-center justify-center bg-[blue]">
+      <div class="flex items-center justify-center">
         <div
-          class="flex items-center justify-center max-width absolute bottm-40 bottom-10"
+          class="flex items-center justify-center max-width tablet:bottom-0 tablet:mt-5 tablet:relative absolute bottm-40 bottom-10"
         >
           <HomePropertySearchComponent />
         </div>
@@ -94,10 +94,10 @@ const heroData = [
     </div>
   </Section>
   <section
-    class="border-y mb-10 border-b-2 border-b-darkText relative py-16 flex items-center justify-center"
+    class="border-y mb-10 border-b-2 border-b-darkText relative tablet:py-10 py-16 flex items-center justify-center"
   >
     <div
-      class="flex items-center justify-between max-width duration-1000"
+      class="flex items-center tablet:flex-col tablet:gap-5 justify-between max-width duration-1000"
       v-for="(data, index) in heroData"
       :key="data.name"
       :class="[
@@ -113,11 +113,11 @@ const heroData = [
           rounded
           class="max-w-14"
         />
-        <p class="text-darkText font-medium text-base">{{ data.name }}</p>
-        <p class="text-lightText font-normal text-sm">{{ data.location }}</p>
+        <p class="text-darkText font-medium base:text-sm text-base">{{ data.name }}</p>
+        <p class="text-lightText font-normal text-sm base:text-xs">{{ data.location }}</p>
       </div>
       <div class="text-center">
-        <p class="text-2xl font-normal text-darkText max-w-[620px]">
+        <p class="text-lg lg:text-xl font-normal text-darkText max-w-[620px]">
           {{ data.text }}
         </p>
       </div>

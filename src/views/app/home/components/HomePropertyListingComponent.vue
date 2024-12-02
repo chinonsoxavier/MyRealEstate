@@ -17,11 +17,11 @@ import ImageComponent from "../../../../components/ReComponents/ImageComponent.v
     />
 
     <p
-      class="text-darkText font-medium duration-500 mt-4 hover:text-adminPrimary text-xl"
+      class="text-darkText mobile:text-lg font-medium duration-500 mt-4 hover:text-adminPrimary text-xl"
     >
       Blueberry villa
     </p>
-    <p class="text-lightText fi-light text-base font-normal my-1">
+    <p class="text-lightText mobile:text-sm fi-light text-base font-normal my-1">
       Mirpur 10, Stadium dhaka 1208
     </p>
 
@@ -29,21 +29,21 @@ import ImageComponent from "../../../../components/ReComponents/ImageComponent.v
       class="flex items-center justify-between mt-2 border-b b border-dashed border-b-lightText pb-4"
     >
       <div class="flex items-center justify-start gap-1">
-        <ArrowSquareUpLeftDuoIcon class="w-5 h-5 fill-lightText" />
-        <p class="text-base mt-1 text-lightText font-light">1370 sqft</p>
+        <ArrowSquareUpLeftDuoIcon class="w-5 h-5 mobile:w-4 mobile:h-4 fill-lightText" />
+        <p class="text-base mt-1 text-lightText font-light mobile:text-sm">1370 sqft</p>
       </div>
       <div class="flex items-center justify-start gap-1">
-        <BedDuoIcon class="w-5 h-5 fill-lightText" />
-        <p class="text-base mt-1 text-lightText font-light">3 bed</p>
+        <BedDuoIcon class="w-5 h-5 fill-lightText mobile:w-4 mobile:h-4" />
+        <p class="text-base mt-1 text-lightText font-light mobile:text-sm">3 bed</p>
       </div>
       <div class="flex items-center justify-start gap-1">
-        <BathTubDuoIcon class="w-5 h-5 fill-lightText" />
-        <p class="text-base mt-1 text-lightText font-light">2 baths</p>
+        <BathTubDuoIcon class="w-5 h-5 fill-lightText mobile:w-4 mobile:h-4"  />
+        <p class="text-base mt-1 text-lightText font-light mobile:text-sm">2 baths</p>
       </div>
     </div>
-    <div class="flex items-center justify-between py-5" >
-        <p class="text-darkText text-2xl font-medium" >$3,280 / <span class="text-[19px] font-normal" >m</span></p>
-         <IconComponent class="bg-black fill-white w-14 h-14 duration-500 hover:bg-adminPrimary" >
+    <div class="flex items-center justify-between py-5 mobile:py-1" >
+        <p class="text-darkText text-2xl font-medium mobile:text-lg" >$3,280 / <span class="text-[19px] font-normal" >m</span></p>
+         <IconComponent class="bg-black fill-white mobile:w-10 mobile:h-10 w-14 h-14 duration-500 hover:bg-adminPrimary" >
              <ArrowUpRightIcon class="w-6 h-6" />
          </IconComponent>
     </div>

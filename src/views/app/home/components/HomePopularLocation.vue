@@ -35,8 +35,8 @@ onMounted(() => {
 <template>
   <div class="flex items-center flex-col justify-center flex-1 basis-1/5">
     <div class="max-width flex flex-col items-center justify-center">
-      <p class="text-5xl font-medium text-darkText">Explore Popular Location</p>
-      <p class="text-lg font-normal text-lightText mt-5">
+      <p class="text-2xl xs:text-3xl md:text-4xl lg:text-4xl tablet:text-center  font-medium text-darkText">Explore Popular Location</p>
+      <p class="text-lg font-normal mobile:text-base tablet:text-center text-lightText mt-5">
         Explore the latest listings & projects in diverse areas
       </p>
     </div>

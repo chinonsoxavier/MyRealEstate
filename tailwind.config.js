@@ -11,7 +11,7 @@ module.exports = {
         // lightText: "#313133;",
         darkText: "rgba(53,53,53)",
         lighterText: "rgb(191, 189, 189)",
-        adminPrimary:"rgba(232,41,104)",
+        adminPrimary: "rgba(232,41,104)",
         lightPrimary: "#e8f4eb",
         primary: "#0a7274",
         darkPrimary: "#1c252e",
@@ -24,6 +24,7 @@ module.exports = {
           primary: "#fae0bd",
         },
       },
+
       borderColor: {
         lightPrimaryBd: "#c4d6d4",
       },
@@ -32,9 +33,14 @@ module.exports = {
       },
 
       screens: {
+        base: { max: "900px" },
+        lg: { min: "900px" },
         mobile: { max: "380px" },
         xs: { min: "380px" },
         tablet: { max: "768px" },
+        md: { min: "768px" },
+
+        // base:{max:"9"},
         laptop: "1034px",
       },
       fontSize: {

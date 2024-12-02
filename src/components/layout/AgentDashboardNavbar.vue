@@ -46,7 +46,7 @@ const setThemeMode = () => {
         <MenuIcon class="w-7 h-7 cursor-pointer"/>
        
          <div
-          class="rounded-md text-sm relative flex items-center justify-center border"
+          class="rounded-md tablet:hidden text-sm relative flex items-center justify-center border"
           >
           <MagnifyingGlass class="w-5 h-5 absolute left-1" />
           <input placeholder="Search..."

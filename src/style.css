@@ -275,3 +275,8 @@
   /* padding-inline-start: 7rem;
   padding-inline-end: 7rem; */
 }
+
+
+.flex2{
+  flex: 1 2 0%;
+}

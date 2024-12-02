@@ -5,7 +5,7 @@
   <div class="flex items-center justify-center relative">
     <div class="flex items-center text-left flex-1 flex-col relative z-10">
       <p
-        class="text-6xl font-medium text-darkText leading-[70px] text-center max-w-[750px]"
+        class="text-3xl xs:text-4xl md:text-5xl  font-medium text-darkText  mobile:leading-2 mobile:leading-10 leading-[70px] text-center max-w-[750px]"
       >
         Any Inquiry? Feel free To contact Us.
       </p>

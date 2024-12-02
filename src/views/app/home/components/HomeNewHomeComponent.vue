@@ -8,12 +8,13 @@ import HomeAdvantagesCardComponent from "./HomeAdvantagesCardComponent.vue";
 <template>
   <div class="flex flex-col items-center justify-center">
     <div class="max-width text-center">
-      <p class="text-4xl font-medium text-darkText">Unlock Homy's advantages</p>
+      <p class="text-4xl font-medium text-darkText">We’r here to help
+you get your dream home</p>
       <p class="text-lg font-normal text-lightText mt-5">
-        Your trusted real estate partner in every transaction.
+    It’s easy to start with us with these simple steps
       </p>
     </div>
-    <div class="flex items-center mt-10 justify-center max-width">
+    <div class="flex items-center mt-10 justify-center max-width base:flex-col base:gap-8">
       <HomeAdvantagesCardComponent
         label="Create Account"
         text="It’s very easy to open an account and start your journey."
@@ -24,7 +25,7 @@ import HomeAdvantagesCardComponent from "./HomeAdvantagesCardComponent.vue";
           class="max-w-32"
         />
       </HomeAdvantagesCardComponent>
-      <div class="flex items-center justify-center" >
+      <div class="flex items-center justify-center base:hidden" >
           <span class="flex-1 border-b border-dashed h border-lightText border min-w-32" >
         </span>
             <CaretIcon class="w-8 h-8 -ml-4 -rotate-90" />
@@ -39,7 +40,7 @@ import HomeAdvantagesCardComponent from "./HomeAdvantagesCardComponent.vue";
           class="max-w-32"
         />
       </HomeAdvantagesCardComponent>
-       <div class="flex items-center justify-center" >
+       <div class="flex items-center justify-center base:hidden" >
           <span class="flex-1 border-b border-dashed h border-lightText border min-w-32" >
         </span>
             <CaretIcon class="w-8 h-8 -ml-4 -rotate-90" />

@@ -91,7 +91,7 @@ const options2 = {
 </script>
 
 <template>
-  <div class="px-5 bg-[#f9f9fc] h-[90%] overflow-scroll pt-5">
+  <div class="px-5 bg-[#f9f9fc] h-[90%] overflow-y-scroll pt-5">
     <div class="flex items-center justify-between w-full">
       <p class="text-[28px] font-mediu pop-medium text-darkText">Dashboard</p>
       <div class="flex items-center justify-end text-[15px] text-lightText">
@@ -207,18 +207,20 @@ const options2 = {
       </div>
     </div>
     <div
-      class="py-4 mt-5 h-full ma0px] gap-3 flex items-start bg-[#f9f9fc] justify-center"
+      class="py-4 mt-5 overflow-hidden base:hiddn h-full flex-wrap base:flex-col gap-3 flex items-start bg-[#f9f9fc] justify-center"
     >
-      <div class="flex-1 h-full">
+      <div class="flex-1 base:flex-col hidden h-full">
         <VueApexCharts
+        class="w-full"
           width="100%"
           height="100%"
           type="line"
           :options="options"
           :series="options.series"
         >Could not display chart</VueApexCharts>
+        
       </div>
-      <div class="flex-1 max-w-[340px] bg-white rounded p-3 shadow">
+      <div class="flex-1 flex-col max-w-[340px] rounded p-3 shadow">
         <p class="text-lg text-lightText font-medium">Weekly Sales</p>
         <div class="py-5">
           <div class="relative flex items-center justify-center">
@@ -263,7 +265,7 @@ const options2 = {
         </div>
       </div>
     </div>
-    <div class="shadow-md hdden mt-8 bg-white p-3 rounded-md">
+    <div class="shadow-md hdden mt-8 bg-white overflow-x-scroll p-3 rounded-md">
       <div class="flex items-center justify-between">
         <p class="t text-darkText text-lg">Latest Transaction</p>
         <div class="relative">
@@ -529,8 +531,8 @@ const options2 = {
       </table>
     </div>
     <div class="rounded-md bg-white shadow-md p-3 my-5">
-      <div class="flex gap-5 items-stretch justify-between">
-        <div class="flex flex-col flex-1 max-w-80 items-start">
+      <div class="flex gap-5 items-stretch justify-between flex-wrap">
+        <div class="flex flex-col flex-1 max-w-80 items-start min-w-[260px]">
           <div class="flex flex-col mb-5">
             <p class="text-xl font-semibold text-lightText">Reviews</p>
             <p class="text-sm text-lightText">Overview of Review</p>

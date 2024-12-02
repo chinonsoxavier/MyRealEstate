@@ -34,8 +34,17 @@ import slider02 from "./images/slider07.jpg";
 import slider03 from "./images/slider8.jpg";
 import slider04 from "./images/slider9.jpg";
 import shape02 from "./ils_02.svg";
+import listing1 from "./images/img_43.jpg";
+import listing2 from "./images/img_44.jpg";
+import listing3 from "./images/img_45.jpg";
+import listing4 from "./images/img_46.jpg";
+
 
 export {
+  listing1,
+  listing2,
+  listing3,
+  listing4,
   shape02,
     icon7,
     icon8,

@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import { advantagesIcon1, advantagesIcon2, advantagesIcon3 } from "../../../../assets/exports";
+import {
+  advantagesIcon1,
+  advantagesIcon2,
+  advantagesIcon3,
+} from "../../../../assets/exports";
 import ImageComponent from "../../../../components/ReComponents/ImageComponent.vue";
 import HomeAdvantagesCardComponent from "./HomeAdvantagesCardComponent.vue";
 </script>
@@ -7,12 +11,16 @@ import HomeAdvantagesCardComponent from "./HomeAdvantagesCardComponent.vue";
 <template>
   <div class="flex flex-col items-center justify-center">
     <div class="max-width text-center">
-      <p class="text-5xl font-medium text-darkText">Unlock Homy's advantages</p>
-      <p class="text-lg font-normal text-lightText mt-5">
+      <p class="text-3xl xs:text-4xl md:text-5xl font-medium text-darkText">
+        Unlock ChiHomes advantages
+      </p>
+      <p class="text-lg  font-normal text-lightText mt-5">
         Your trusted real estate partner in every transaction.
       </p>
     </div>
-    <div class="flex items-center max-width gap-10 mt-10 justify-center">
+    <div
+      class="flex items-center tablet:flex-col max-width gap-10 mt-10 justify-center"
+    >
       <HomeAdvantagesCardComponent
         label="BUY A HOME"
         text="Explore homy’s 2 million+ homes and uncover your ideal living space."

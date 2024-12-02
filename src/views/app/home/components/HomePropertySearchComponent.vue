@@ -31,12 +31,17 @@ const pricePreferenceOptions = [
 
 const setpropetyPreference = (prop) => {
   propertyPreference.value = prop;
+  showDropDown.value = '';
 };
 const setlocationPreference = (prop) => {
   locationPreference.value = prop;
+    showDropDown.value = '';
+
 };
 const setpricePreference = (prop) => {
   pricePreference.value = prop;
+    showDropDown.value = '';
+
 };
 
 
@@ -49,7 +54,7 @@ const showDropDown = ref("");
 
 <template>
   <div class="flex flex-col items-center justify-center relative w-full">
-    <div class="w-full h-full">
+    <div class="w-full h-full relative tablet:hidden">
       <svg
         viewBox="0 0 1190 176"
         class="w-full h-full"
@@ -3367,12 +3372,13 @@ const showDropDown = ref("");
       </svg>
     </div>
     <div
-      class="absolute w-[95%] h-[80%] shadow-md p-6 bg-white flex items-center justify-center rounded-xl"
+      class="abslute tablet:relative w-[95%] shadow-md p-6 bg-white z-20 border flex items-center justify-center rounded-xl"
     >
-      <div class="flex items-center justify-between gap-3 flex-1">
-        <div class="flex-1 relative flex flex-col gap-3 pr-6 border-r">
+      <div class="flex items-center justify-between  flex-wrap  fle-col tablet:flex-col flex-1">
+        <div class="flex-1 relative flex flex-col gap-3 min-w-[200px] basis-1/5 w-full pr-6  border-r tablet:border-b tablet:border-r-0 mr-4 py-2">
           <p class="text-[15px] text-lightText">I’m looking to...</p>
           <div class="relative flex-1">
+            
             <div
             @click="setShowDropDown('property')"
               class="flex items-center justify-between w-full cursor-pointer"
@@ -3383,10 +3389,10 @@ const showDropDown = ref("");
           </div>
           <div
             v-if="showDropDown == 'property'"
-            class="bg-white shadow-md top-[70px] p-3 rounded-md absolute border"
+            class="z-20 w-full  bg-white shadow-md top-[70px] rounded-md absolute border"
           >
             <p
-              class="text-sm leading-6 text-lightText font-medium"
+              class="text-sm leading-6 text-lightText font-medium p-2 duration-500 hover:bg-adminPrimary hover:text-white cursor-pointer"
               @click="setpropetyPreference(item)"
               v-for="(item, index) in propertyPreferenceOptions"
               :key="index"
@@ -3395,7 +3401,7 @@ const showDropDown = ref("");
             </p>
           </div>
         </div>
-        <div class="flex-1 flex flex-col gap-3 pr-6 border-r relative">
+        <div class="flex-1 flex flex-col gap-3 min-w-[200px] basis-1/5 w-full pr-6  border-r tablet:border-b tablet:border-r-0 mr-4 py-2 relative">
           <p class="text-[15px] text-lightText">Location</p>
           <div class="relative flex-1">
             <div
@@ -3408,10 +3414,10 @@ const showDropDown = ref("");
           </div>
           <div
             v-if="showDropDown == 'location'"
-            class="bg-white shadow-md top-[70px] p-3 rounded-md absolute border"
+            class="z-20 w-full  bg-white shadow-md top-[70px] rounded-md absolute border"
           >
             <p
-              class="text-sm leading-6 text-lightText font-medium"
+              class="text-sm leading-6 text-lightText font-medium p-2 duration-500 hover:bg-adminPrimary hover:text-white cursor-pointer"
               @click="setlocationPreference(item)"
               v-for="(item, index) in locationPreferenceOptions"
               :key="index"
@@ -3420,7 +3426,7 @@ const showDropDown = ref("");
             </p>
           </div>
         </div>
-        <div class="flex-1 flex flex-col gap-3 pr-6 border-r relative">
+        <div class="flex-1 flex flex-col gap-3 min-w-[200px] basis-1/5 w-full pr-6  border-r tablet:border-b tablet:border-r-0 mr-4 py-2 relative">
           <p class="text-[15px] text-lightText">Price Range</p>
           <div class="relative flex-1">
             <div
@@ -3433,10 +3439,10 @@ const showDropDown = ref("");
           </div>
           <div
             v-if="showDropDown == 'price'"
-            class="bg-white shadow-md top-[70px] p-3 rounded-md absolute border"
+            class="z-20 w-full  bg-white shadow-md top-[70px] rounded-md absolute border"
           >
             <p
-              class="text-sm leading-6 text-lightText font-medium"
+              class="text-sm leading-6 text-lightText font-medium p-2 duration-500 hover:bg-adminPrimary hover:text-white cursor-pointer"
               @click="setpricePreference(item)"
               v-for="(item, index) in pricePreferenceOptions"
               :key="index"
@@ -3445,7 +3451,7 @@ const showDropDown = ref("");
             </p>
           </div>
         </div>
-        <button class="b bg-adminPrimary text-white py-3 rounded-md text-lg px-7" >Search</button>
+        <button class="flex-1 tablet:mt-10 w-full bg-adminPrimary text-white py-3 rounded-md text-lg px-7" >Search</button>
       </div>
     </div>
   </div>

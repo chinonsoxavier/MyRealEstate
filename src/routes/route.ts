@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeMainView from "../views/app/home/HomeMainView.vue";
 import { agentRoutes } from "./agent";
+import ListingsMainView from "../views/app/listings/ListingsMainView.vue";
 
 const routes = [
   ...agentRoutes,
@@ -13,6 +14,11 @@ const routes = [
     path: "/",
     name: "home",
     component: HomeMainView,
+  },
+  {
+    path: "/listings/:id",
+    name: "listings",
+    component: ListingsMainView,
   },
 ];
 
