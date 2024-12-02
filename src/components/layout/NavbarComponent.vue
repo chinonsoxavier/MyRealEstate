@@ -2,14 +2,18 @@
 import { onBeforeMount, onMounted, onUnmounted, ref } from "vue";
 import LockSimpleDuoIcon from "../icons/duo/LockSimpleDuoIcon.vue";
 import ArrowUpRightIcon from "../icons/regular/ArrowUpRightIcon.vue";
-import { store } from "../../utilities/store";
+//import { store } from "../../utilities/store";
 // import { store } from "../../utilities/store";
+import {useMainStore} from "../../utilities/store";
+
+const store = useMainStore();
 
 const menuOpen = ref(store.menuOpen);
 
 const toggleMenu = () => {
   // store.toggleMenu();
   // menuOpen.value = !menuOpen.value
+store.toggleMenu();
   console.log(menuOpen);
 }
 
